@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>SWQE Issue Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="container__title">SWQE Issue Form Generator</h1>
+                <p class="container__description">
+                    This is a Xopero SWQE Issue Form Generator, used to describe
+                    problems appeared in XMS testing
+                </p>
+            </header>
+            <main>
+                <form action="" class="container__form">
+                    <h2 class="container__steps">SOFTWARE</h2>
+                    <input
+                        type="text"
+                        value=""
+                        id="software-input"
+                        class="container__text-input container__text-input--software"
+                        placeholder="wprowadź nazwę brancha lub commity"
+                    />
+                    <h2 class="container__steps">HARDWARE</h2>
+                    <input
+                        type="text"
+                        value=""
+                        id="hardware-input"
+                        class="container__text-input container__text-input--software"
+                        placeholder="wprowadź dane komputera (procesor, pamięć, dysk twardy)"
+                    />
+                    <h2 class="container__steps">STEPS</h2>
+                    <textarea
+                        name=""
+                        id="steps-text-input"
+                        cols="60"
+                        rows="15"
+                        class="container__text-area container__text-area--steps"
+                        placeholder="wpisz krok po kroku jak zreprodukować błąd"
+                    ></textarea>
+                    <h2 class="container__steps">REPRODUCTION RATE</h2>
+                    <input
+                        type="text"
+                        id="reproduction-text-input"
+                        value=""
+                        placeholder="wpisz ilośc prób testu"
+                        class="container__text-input container__text-input--reproduction-rate"
+                    />
+                    <h2 class="container__steps">EXPECTED RESULT</h2>
+                    <input
+                        type="text"
+                        value=""
+                        id="expected-result-text-input"
+                        placeholder="wpisz prawidłowe zachowanie aplikacji"
+                        class="container__text-input container__text-input--expected-result"
+                    />
+                    <h2 class="container__steps">ADDITIONAL INFO</h2>
+                    <input
+                        type="button"
+                        value="submit"
+                        id="submit"
+                        class="btn btn--submit"
+                    />
+                    <input
+                        type="reset"
+                        value="reset"
+                        id="reset"
+                        class="btn btn--reset"
+                    />
+                    <br />
+                    <textarea
+                        name=""
+                        id="result-textarea"
+                        cols="50"
+                        rows="30"
+                        placeholder="Tutaj wygenerowany zostanie przycisk"
+                        class="container__text-area container__text-area--result"
+                    ></textarea>
+                    <br />
+                    <input
+                        type="button"
+                        value="copy"
+                        id="copy-btn"
+                        class="btn btn--copy"
+                    />
+                </form>
+            </main>
+        </div>
+        <script src="javascript/script.js"></script>
+    </body>
+</html>

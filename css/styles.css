@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+* {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+body {
+  width: 100%;
+  background-color: #bdbaad;
+}
+
+header {
+  margin-bottom: -2rem;
+}
+
+.container {
+  background-color: #f8da52;
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container__title {
+  font-family: "Arvo", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.container__description {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container__form {
+  display: block;
+}
+
+.container__steps {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.container__text-area {
+  width: 50%;
+  background-color: #dbd7d7;
+}
+
+.container__text-input {
+  background-color: #dbd7d7;
+  width: 50%;
+  border: 1px solid;
+}
+
+.btn {
+  background-color: #bdbaad;
+  border: 1px solid;
+}
+/*# sourceMappingURL=styles.css.map */

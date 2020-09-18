@@ -1,0 +1,57 @@
+@import "base";
+@import "variables";
+* {
+    margin: 1rem;
+    padding: 1rem;
+}
+body {
+    width: 100%;
+    background-color: $background-secondary;
+}
+header {
+    margin-bottom: -2rem;
+}
+
+.container {
+    background-color: $background-primary;
+    font-family: $font-secondary;
+    width: 50%;
+    margin: 0 auto;
+
+    &__title {
+        font-family: $font-primary;
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    &__form {
+        display: block;
+    }
+
+    &__steps {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    &__text-area {
+        width: 50%;
+        background-color: rgb(219, 215, 215);
+    }
+
+    &__text-input {
+        background-color: rgb(219, 215, 215);
+        width: 50%;
+        border: 1px solid;
+    }
+}
+
+.btn {
+    background-color: $background-secondary;
+    border: 1px solid;
+}
