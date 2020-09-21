@@ -1,5 +1,6 @@
 const formElements = [
     "[ENVIRONMENT]\nSoftware:",
+    "Hardware:",
     "[STEPS]",
     "[REPRODUCTION RATE]",
     "[EXPECTED RESULT]",
@@ -51,23 +52,27 @@ function generateOutput() {
         "\n" +
         document.getElementById("software-input").value +
         "\n" +
-        "\n" +
         formElements[1] +
         "\n" +
-        document.getElementById("steps-text-input").value +
+        document.getElementById("hardware-input").value +
         "\n" +
         "\n" +
         formElements[2] +
         "\n" +
-        document.getElementById("reproduction-text-input").value +
+        document.getElementById("steps-text-input").value +
         "\n" +
         "\n" +
         formElements[3] +
         "\n" +
+        document.getElementById("reproduction-text-input").value +
+        "\n" +
+        "\n" +
+        formElements[4] +
+        "\n" +
         document.getElementById("expected-result-text-input").value +
         "\n" +
         "\n" +
-        formElements[4];
+        formElements[5];
 
     return result;
 }
