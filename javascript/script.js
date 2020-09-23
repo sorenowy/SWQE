@@ -87,4 +87,5 @@ function copyToClipboard() {
     document.execCommand("copy");
     document.body.removeChild(el);
     alert("skopiowano do schowka");
+    window.open("https://xopero.atlassian.net/secure/Dashboard.jspa");
 }

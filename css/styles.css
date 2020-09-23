@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@400;500;700&display=swap");
 * {
   margin: 1rem;
   padding: 1rem;
@@ -22,9 +22,9 @@ header {
 }
 
 .container__title {
-  font-family: "Arvo", serif;
+  font-family: "Righteous", cursive;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 3rem;
 }
 
