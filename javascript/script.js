@@ -8,10 +8,12 @@ const formElements = [
 ];
 
 const browserData = navigator.userAgent;
-var regex = /Chrome[\/]\d{2}[.]\d[.]\d{4}[.]\d{3}|Safari[\/]\d{3}[.]\d{2}|Firefox[\/]\d{2}[.]\d{1}/;
+var regex = /Chrome[\/]\d{2}.\d{1}.\d{4}.\d{2}|Safari[\/]\d{3}[.]\d{2}|Firefox[\/]\d{2}[.]\d{1}/;
 var regex2 = /Windows[\s]NT[\s]\d{2}[.]\d{1}|Windows[\s]NT[\s]\d{1}[.]\d{1}/;
 var systemVersion = browserData.match(regex2);
 var browserVersion = browserData.match(regex);
+
+console.log(navigator.userAgent);
 console.log(systemValidate());
 console.log(browserVersion[0]);
 
