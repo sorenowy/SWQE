@@ -3,11 +3,12 @@ const formElements = [
     "Hardware:",
     "[STEPS]",
     "[REPRODUCTION RATE]",
+    "[RECOVERY]",
     "[EXPECTED RESULT]",
     "[ADDITIONAL INFO]",
 ];
-
 const browserData = navigator.userAgent;
+
 var regex = /Chrome[\/]\d{2}.\d{1}.\d{4}.\d{2}|Safari[\/]\d{3}[.]\d{2}|Firefox[\/]\d{2}[.]\d{1}/;
 var regex2 = /Windows[\s]NT[\s]\d{2}[.]\d{1}|Windows[\s]NT[\s]\d{1}[.]\d{1}/;
 var systemVersion = browserData.match(regex2);
@@ -71,10 +72,15 @@ function generateOutput() {
         "\n" +
         formElements[4] +
         "\n" +
+        document.getElementById("recovery-text-input").value +
+        "\n" +
+        "\n" +
+        formElements[5] +
+        "\n"+
         document.getElementById("expected-result-text-input").value +
         "\n" +
         "\n" +
-        formElements[5];
+        formElements[6];
 
     return result;
 }
